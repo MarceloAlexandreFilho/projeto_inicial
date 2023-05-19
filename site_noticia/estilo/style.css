@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --cor1: #b10333;
+    --cor2: #80001d;
+    --cor3: #294c71;
+
+}
+
+/*Fundo topo*/
+
+header {
+    width: 100%;
+    height: 225px;
+    background: var(--cor3) url('../imagens/fundo.png');
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+/*Logo1 e logo brasil*/
+
+.container .logo1 {
+    float: left;
+    padding-top: 20px;
+    background-size: 100%;
+}
+
+.container .logo1 img {
+    height: 75px;
+}
+
+
+.container .logo-brasil {
+    float: right;
+}
+
+/*Menu navegação*/
+
+.container menu{
+    width: 690px;
+    float: left;
+    position: relative;
+    top: -60px;
+    padding: 15px 0;
+    list-style-type: none;
+    background-color: var(--cor1);   
+}
+
+.container ul {
+    margin-left: 0px;
+}
+
+.container menu ul a li {
+    display: inline;
+    padding: 0 20px;
+    color: white;
+    
+}
+
+.container menu ul a {
+    background: url('../imagens/divisor.png') no-repeat;
+    text-decoration: none;
+}
+
+.container menu ul a li:hover {
+    color: var(--cor1);
+    padding: 15px 20px;
+    background-color: var(--cor2);
+}
+
+/*main*/
+
+/*Navegação lateral*/
+
+.container aside {
+    float: left;
+    width: 200px;
+    margin-top: 10px;
+    padding: 4px;
+    background: url('../imagens/fundo-caixa.png');
+}
+
+aside h3{
+    color: white;
+    padding: 5px 0px 5px 3px;
+    margin-bottom: 5px;
+    background-color: var(--cor3);
+}
+
+aside ul {
+    background-color: white;
+    padding: 0px 4px 4px 4px;
+}
+
+aside nav ul li {
+    padding: 10px 0px 10px 3px;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.624);
+}
+
+aside nav ul a {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+aside nav ul a li img{
+    display: none;
+}
+
+aside nav ul a li:hover img{
+    display: inline;
+}
+
+/*Navegação lateral email*/
+
+aside nav ul a li:hover {
+    color: rgb(128, 128, 128);
+    background-color: rgb(217, 217, 217);
+}
+
+div.formulario {
+    margin-top: 5px;
+}
+
+/*Conteudo*/
+
+article {
+    margin-top: 10px;
+    float: right;
+}
+
+/*Conteudo1*/
+
+article .destaque {
+    float: left;
+    width: 270px;
+    padding: 5px;
+    margin-right: 15px;
+    background-image: url('../imagens/fundo-caixa.png');
+}
+
+/*conteudo 2*/
+
+article .entrevista {
+    float: right;
+    width: 270px;
+    padding: 5px;
+    background-image: url('../imagens/fundo-caixa.png');
+}
+
+article .destaque h3, .entrevista  h3{
+    color: white;
+    padding: 5px 0px 5px 3px;
+    margin-bottom: 5px;
+    background-color: var(--cor3);
+}
+
+
+article .destaque .taxi img , .entrevista .doutor  img{
+    height: 170px;
+    border: 3px solid rgb(171, 171, 171);
+}
+
+article .destaque .taxi, .entrevista .doutor{
+    padding: 5px;
+    background-color: white;
+}
+
+article .destaque .taxi h4, .entrevista .doutor h4{
+    display: inline;
+    padding-left: 2px;
+    color: white;
+    font-weight: none;
+    background-color: var(--cor1);
+}
+
+article .destaque a, .entrevista a{
+    color: #b10333;
+}
+
+/*Conteudo3*/
+
+article .mundo {
+    float: left;
+    width: 270px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 15px;
+    background-image: url('../imagens/fundo-caixa.png');
+}
+
+/*conteudo 4*/
+
+article .noticias {
+    float: right;
+    width: 270px;
+    padding: 5px;
+    margin-top: 10px;
+    background-image: url('../imagens/fundo-caixa.png');
+}
+
+.mundo h3 {
+    padding: 5px 0px 5px 3px;
+    color: white;
+    background-color: var(--cor3);
+}
+
+.novas ul li h3 {
+    color: black;
+    background-color: white;
+}
+
+.novas ul li img {
+    float: left;
+    margin-right: 3px;
+    height: 50px;
+    border: 2px solid rgb(171, 171, 171);
+}
+
+.novas ul li {
+    float: right;
+    padding: 5px 0px 5px 3px;
+    font-size: .8em;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(180, 180, 180, 0.611);
+    background-color: white;
+}
